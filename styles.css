@@ -26,7 +26,7 @@ body{
 }
 .brand{
   font-family:'Playfair Display', Georgia, serif;
-  font-size:96px; /* larger, matching the visual weight in the image */
+  font-size:72px;
   margin:0 0 8px 0;
   letter-spacing:0.6px;
   color:var(--accent);
@@ -35,35 +35,35 @@ body{
   margin:0 0 20px 0;
   font-weight:600;
   color:var(--muted);
-  font-size:18px;
+  font-size:16px;
 }
 .blurb{
-  max-width:46ch; /* slightly wider for better measure */
+  max-width:46ch;
   color:var(--muted);
   margin:14px 0 30px 0;
-  line-height:1.8;
-  font-size:15px;
+  line-height:1.7;
+  font-size:14px;
 }
 .signup{display:flex;flex-direction:column;align-items:center;gap:12px;width:100%;max-width:420px;}
 .signup input[type="email"]{
-  width:100%;padding:14px 18px;border-radius:10px;border:1px solid var(--input-border);box-shadow:0 1px 0 rgba(0,0,0,0.02) inset;font-size:15px;color:#333;
-  text-align:center; /* center placeholder and entered email */
+  width:100%;padding:14px 18px;border-radius:10px;border:1px solid var(--input-border);box-shadow:0 1px 0 rgba(0,0,0,0.02) inset;font-size:14px;color:#333;
+  text-align:center;
 }
 .signup input[type="email"]::placeholder{ text-align:center; color: #9aa0a6; }
 /* Button: full width inside the signup container and subtle lift on hover */
 .btn{
   display:block;
   width:100%;
-  height:52px;
+  height:48px;
   background:var(--accent);
   color:white;
   border:none;
   padding:0 18px;
-  line-height:52px;
+  line-height:48px;
   border-radius:10px;
   font-weight:600;
   cursor:pointer;
-  font-size:16px;
+  font-size:14px;
   box-shadow:0 2px 0 rgba(0,0,0,0.08);
   transition:transform 180ms cubic-bezier(.2,.9,.2,1), box-shadow 180ms ease, background 120ms ease;
   transform-origin:center;
@@ -80,10 +80,20 @@ body{
 .follow{margin:0;font-weight:500}
 .channels{display:flex;gap:48px;justify-content:center;margin-top:14px}
 .col{min-width:120px}
-.channel-name{margin:0;font-size:13px;color:var(--muted)}
-.handles{margin:8px 0 0 0;font-weight:600}
+/* Social section: matching font sizes */
+.follow, .channel-name{
+  margin:0;
+  font-size:13px;
+  color:var(--muted);
+  font-weight:500;
+}
+.handles{
+  margin:6px 0 0 0;
+  font-weight:500;
+  font-size:12px;
+}
 
-/* clickable handle links (e.g. TikTok) — subtle balloon on hover/focus */
+/* clickable handle links (e.g. TikTok) — subtle balloon on hover */
 .handle-link{
   color:var(--accent); /* plain black text */
   font-weight:700;
