@@ -1,0 +1,68 @@
+:root{
+  --bg:#ffffff;
+  --muted:#6b7280;
+  --accent:#111111;
+  --input-border:#ececec;
+  --max-width:540px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color:#222;
+  background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+.hero{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding:48px 20px;
+  text-align:center;
+}
+.brand{
+  font-family:'Playfair Display', Georgia, serif;
+  font-size:72px;
+  margin:0 0 6px 0;
+  letter-spacing:0.5px;
+}
+.kicker{
+  margin:0 0 18px 0;
+  font-weight:600;
+  color:var(--muted);
+}
+.blurb{
+  max-width:40ch;
+  color:var(--muted);
+  margin:12px 0 26px 0;
+  line-height:1.6;
+}
+.signup{display:flex;flex-direction:column;align-items:center;gap:12px;width:100%;max-width:var(--max-width);}
+.signup input[type="email"]{
+  width:100%;padding:14px 18px;border-radius:10px;border:1px solid var(--input-border);box-shadow:0 1px 0 rgba(0,0,0,0.02) inset;font-size:15px;color:#333;
+}
+.btn{
+  width:100%;background:var(--accent);color:white;border:none;padding:12px 18px;border-radius:10px;font-weight:600;cursor:pointer;font-size:16px;box-shadow:0 2px 0 rgba(0,0,0,0.08);
+}
+.btn:active{transform:translateY(1px)}
+.msg{font-size:13px;color:green;min-height:1.2em}
+.divider{width:100%;max-width:var(--max-width);border:0;border-top:1px solid #f1f1f1;margin:36px 0}
+.social{color:var(--muted);}
+.follow{margin:0;font-weight:500}
+.channels{display:flex;gap:48px;justify-content:center;margin-top:14px}
+.col{min-width:120px}
+.channel-name{margin:0;font-size:13px;color:var(--muted)}
+.handles{margin:8px 0 0 0;font-weight:600}
+
+.thoughts{
+  position:fixed;right:18px;bottom:18px;background:#f6f6f6;border:0;padding:10px 14px;border-radius:999px;box-shadow:0 6px 16px rgba(0,0,0,0.08);cursor:pointer;color:#444;font-size:13px
+}
+
+@media (max-width:520px){
+  .brand{font-size:48px}
+  .channels{gap:20px}
+}
