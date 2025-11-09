@@ -49,6 +49,15 @@ body{
   width:100%;background:var(--accent);color:white;border:none;padding:12px 18px;border-radius:10px;font-weight:600;cursor:pointer;font-size:16px;box-shadow:0 2px 0 rgba(0,0,0,0.08);
 }
 .btn:active{transform:translateY(1px)}
+.btn{
+  transition:transform 180ms cubic-bezier(.2,.9,.2,1), box-shadow 180ms ease, background 120ms ease;
+  transform-origin:center;
+}
+.btn:hover,
+.btn:focus-visible{
+  transform:translateY(-4px) scale(1.02);
+  box-shadow:0 12px 30px rgba(0,0,0,0.12);
+}
 .msg{font-size:13px;color:green;min-height:1.2em}
 .divider{width:100%;max-width:var(--max-width);border:0;border-top:1px solid #f1f1f1;margin:36px 0}
 .social{color:var(--muted);}
@@ -57,6 +66,25 @@ body{
 .col{min-width:120px}
 .channel-name{margin:0;font-size:13px;color:var(--muted)}
 .handles{margin:8px 0 0 0;font-weight:600}
+
+/* clickable handle links (e.g. TikTok) — subtle balloon on hover/focus */
+.handle-link{
+  color:inherit;
+  font-weight:700;
+  text-decoration:none;
+  display:inline-block;
+  padding:4px 6px;
+  border-radius:6px;
+  transition:transform 180ms cubic-bezier(.2,.9,.2,1), box-shadow 180ms ease, background 120ms ease;
+  transform-origin:center;
+}
+.handle-link:hover,
+.handle-link:focus-visible{
+  transform:translateY(-3px) scale(1.06);
+  box-shadow:0 10px 24px rgba(0,0,0,0.08);
+  background:rgba(0,0,0,0.02);
+}
+.handle-link:active{transform:translateY(-1px) scale(1.02)}
 
 .thoughts{
   position:fixed;right:18px;bottom:18px;background:#f6f6f6;border:0;padding:10px 14px;border-radius:999px;box-shadow:0 6px 16px rgba(0,0,0,0.08);cursor:pointer;color:#444;font-size:13px
