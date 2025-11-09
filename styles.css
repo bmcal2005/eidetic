@@ -69,17 +69,18 @@ body{
 /* Hover: grow the button's width/height to create a balloon effect (explicit width/height change) */
 .btn:hover,
 .btn:focus-visible{
-  width:360px;
-  height:56px;
-  transform:translateY(-6px) scale(1.02);
-  box-shadow:0 20px 40px rgba(0,0,0,0.14);
-  font-size:17px;
+  /* less pronounced inflate */
+  width:340px;
+  height:52px;
+  transform:translateY(-3px) scale(1.01);
+  box-shadow:0 10px 22px rgba(0,0,0,0.10);
+  font-size:16.5px;
 }
 
 /* Keep button responsive on narrow screens */
 @media (max-width:520px){
   .btn{width:100%;height:44px;padding:0 16px;line-height:44px}
-  .btn:hover,.btn:focus-visible{width:100%;height:48px;transform:translateY(-3px) scale(1.01)}
+  .btn:hover,.btn:focus-visible{width:100%;height:48px;transform:translateY(-2px) scale(1.01)}
 }
 .msg{font-size:13px;color:green;min-height:1.2em}
 .divider{width:100%;max-width:var(--max-width);border:0;border-top:1px solid #f1f1f1;margin:36px 0}
@@ -103,8 +104,9 @@ body{
 }
 .handle-link:hover,
 .handle-link:focus-visible{
-  transform:translateY(-6px) scale(1.06); /* match stronger inflate with button */
-  box-shadow:0 14px 28px rgba(0,0,0,0.10);
+  /* gentler inflate */
+  transform:translateY(-3px) scale(1.03);
+  box-shadow:0 8px 18px rgba(0,0,0,0.08);
   background:rgba(0,0,0,0.02);
 }
 .handle-link:active{transform:translateY(-2px) scale(1.03)}
