@@ -166,7 +166,7 @@ body{
   line-height: 1;
 }
 .modal-textarea {
-  font-size: 11px; /* reduced by ~5px per request */
+  font-size: 13px; /* reduced by ~5px per request */
   font-family: Inter, Arial, sans-serif;
   border-radius: 10px;
   border: 1px solid #ececec;
