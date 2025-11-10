@@ -34,7 +34,17 @@
       </section>
     </main>
 
-    <button class="thoughts">thoughts?</button>
+    <button class="thoughts" id="thoughtsBtn">thoughts?</button>
+
+    <!-- Modal for sharing thoughts -->
+    <div class="modal-overlay" id="modalOverlay" style="display:none;">
+      <div class="modal">
+        <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+        <h3 class="modal-title">share your thoughts on Eidetic</h3>
+        <textarea class="modal-textarea" id="modalTextarea" placeholder="what's the last great idea you lost because you couldn't capture it in time?"></textarea>
+        <button class="modal-share" id="modalShare">share</button>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>

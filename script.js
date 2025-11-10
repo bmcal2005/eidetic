@@ -28,3 +28,27 @@ form.addEventListener('submit', (ev)=>{
     email.value = '';
   }, 800);
 });
+
+// Modal logic for 'thoughts' popup
+const thoughtsBtn = document.getElementById('thoughtsBtn');
+const modalOverlay = document.getElementById('modalOverlay');
+const modalClose = document.getElementById('modalClose');
+const modalTextarea = document.getElementById('modalTextarea');
+
+function openModal() {
+  modalOverlay.style.display = 'flex';
+  modalTextarea.focus();
+  document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+  modalOverlay.style.display = 'none';
+  document.body.style.overflow = '';
+}
+thoughtsBtn.addEventListener('click', openModal);
+modalClose.addEventListener('click', closeModal);
+modalOverlay.addEventListener('click', function(e) {
+  if (e.target === modalOverlay) closeModal();
+});
+document.addEventListener('keydown', function(e) {
+  if (modalOverlay.style.display === 'flex' && e.key === 'Escape') closeModal();
+});
