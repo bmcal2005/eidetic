@@ -75,7 +75,7 @@ body{
   .btn:hover,.btn:focus-visible{transform:translateY(-2px) scale(1.01)}
 }
 .msg{font-size:13px;color:green;min-height:1.2em}
-.divider{width:100%;max-width:var(--max-width);border:0;border-top:1px solid #f1f1f1;margin:36px 0}
+.divider{width:100%;max-width:var(--max-width);border:0;border-top:1px solid #f1f1f1;margin:18px 0}
 .social{color:var(--muted);}
 .follow{margin:0;font-weight:500}
 .channels{display:flex;gap:48px;justify-content:center;margin-top:14px}
