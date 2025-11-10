@@ -6,7 +6,7 @@
   --max-width:540px;
 }
 *{box-sizing:border-box}
-html,body{height:100%}
+.html,body{height:100%}
 body{
   margin:0;
   font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
@@ -14,6 +14,7 @@ body{
   background:var(--bg);
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
+  overflow-y: hidden; /* prevent page scrolling */
 }
 .hero{
   min-height:100vh;
@@ -21,32 +22,32 @@ body{
   flex-direction:column;
   justify-content:center;
   align-items:center;
-  padding:100px 20px; /* more white space like the reference */
+  padding:36px 16px; /* condensed to fit viewport */
   text-align:center;
 }
 .brand{
   font-family:'Playfair Display', Georgia, serif;
-  font-size:72px;
-  margin:0 0 8px 0;
-  letter-spacing:0.6px;
+  font-size:56px; /* scaled down */
+  margin:0 0 6px 0;
+  letter-spacing:0.4px;
   color:var(--accent);
 }
 .kicker{
-  margin:0 0 20px 0;
+  margin:0 0 12px 0;
   font-weight:600;
   color:var(--muted);
-  font-size:16px;
-}
-.blurb{
-  max-width:46ch;
-  color:var(--muted);
-  margin:14px 0 30px 0;
-  line-height:1.7;
   font-size:14px;
 }
-.signup{display:flex;flex-direction:column;align-items:center;gap:12px;width:100%;max-width:420px;margin-bottom:0}
+.blurb{
+  max-width:44ch;
+  color:var(--muted);
+  margin:10px 0 18px 0;
+  line-height:1.6;
+  font-size:13px;
+}
+.signup{display:flex;flex-direction:column;align-items:center;gap:8px;width:100%;max-width:380px;margin-bottom:0}
 .signup input[type="email"]{
-  width:100%;padding:12px 16px;border-radius:8px;border:1px solid var(--input-border);box-shadow:0 1px 0 rgba(0,0,0,0.02) inset;font-size:13px;color:#333;
+  width:100%;padding:10px 14px;border-radius:8px;border:1px solid var(--input-border);box-shadow:0 1px 0 rgba(0,0,0,0.02) inset;font-size:12px;color:#333;
   text-align:center;
 }
 .signup input[type="email"]::placeholder{ text-align:center; color: #9aa0a6; }
@@ -54,24 +55,24 @@ body{
 .btn{
   display:block;
   width:100%;
-  height:42px;
+  height:38px;
   background:var(--accent);
   color:white;
   border:none;
-  padding:0 16px;
-  line-height:42px;
-  border-radius:10px;
+  padding:0 12px;
+  line-height:38px;
+  border-radius:8px;
   font-weight:600;
   cursor:pointer;
-  font-size:14px;
+  font-size:13px;
   box-shadow:0 2px 0 rgba(0,0,0,0.08);
-  transition:transform 180ms cubic-bezier(.2,.9,.2,1), box-shadow 180ms ease, background 120ms ease;
+  transition:transform 160ms cubic-bezier(.2,.9,.2,1), box-shadow 160ms ease, background 120ms ease;
   transform-origin:center;
 }
 .btn:active{transform:translateY(1px)}
 .btn:hover,.btn:focus-visible{transform:translateY(-3px) scale(1.01);box-shadow:0 12px 28px rgba(0,0,0,0.12)}
 @media (max-width:520px){
-  .btn{height:44px;line-height:44px}
+  .btn{height:40px;line-height:40px}
   .btn:hover,.btn:focus-visible{transform:translateY(-2px) scale(1.01)}
 }
 .msg{font-size:13px;color:green;min-height:1.2em}
