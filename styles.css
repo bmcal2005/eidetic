@@ -79,7 +79,7 @@ body{
 .divider{width:100%;max-width:var(--max-width);border:0;border-top:1px solid #f1f1f1;margin:14px 0}
 .social{color:var(--muted);}
 .follow{margin:0;font-weight:500}
-.channels{display:flex;gap:48px;justify-content:center;margin-top:18px}
+.channels{display:flex;gap:48px;justify-content:center;margin-top:8px}
 .col{min-width:120px}
 /* Social section: smaller font sizes */
 .follow, .channel-name {
